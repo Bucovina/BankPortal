@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>
+    Bank Portal
+</h1>
+<table class="box">
+    <tr>
+        <td>
+            <form onsubmit="event.preventDefault();">
+                <div>
+                    <label>First Name*
+                        <input type="text" id="firstName">
+                    </label>
+                    <label>Last Name*
+                        <input type="text" id="lastName">
+                    </label>
+                    <label id="nameValidationError" style="visibility: hidden">Enter a name!</label>
+                </div>
+                <div>
+                    <label>CNP*
+                        <input type="text" id="CNP">
+                    </label>
+                    <label id="CNPValidationError" style="visibility: hidden">CNP is not valid!</label>
+                </div>
+                <div>
+                    <label>Phone
+                        <input type="text" id="phone">
+                    </label>
+                </div>
+                <div>
+                    <label>Email
+                        <input type="text" id="email">
+                    </label>
+                </div>
+                <div>
+                    <label>Address
+                        <input type="text" id="address">
+                    </label>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Submit" onclick="submitForm()">
+                </div>
+            </form>
+        </td>
+        <td>
+            <table class="list" id="usersList">
+                <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>CNP</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<script src="app.js"></script>
+</body>
+</html>
