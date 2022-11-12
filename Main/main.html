@@ -14,34 +14,25 @@
         <td>
             <form onsubmit="event.preventDefault();">
                 <div>
-                    <label>First Name*
-                        <input type="text" id="firstName">
-                    </label>
-                    <label>Last Name*
-                        <input type="text" id="lastName">
-                    </label>
+                    <label for="firstName"></label><input type="text" id="firstName" placeholder="First Name*">
+                    <br>
+                    <label for="lastName"></label><input type="text" id="lastName" placeholder="Last Name*">
                     <label id="nameValidationError" style="visibility: hidden">Enter a name!</label>
                 </div>
                 <div>
-                    <label>CNP*
-                        <input type="text" id="CNP">
-                    </label>
-                    <label id="CNPValidationError" style="visibility: hidden">CNP is not valid!</label>
+                    <label for="CNP"></label><input type="text" id="CNP" placeholder="CNP*">
+                    <label id="CNPValidationError" style="visibility: hidden">CNP invalid!</label>
                 </div>
                 <div>
-                    <label>Phone
-                        <input type="text" id="phone">
-                    </label>
+                    <label for="phone"></label><input type="text" id="phone" placeholder="Phone">
+                    <br>
                 </div>
                 <div>
-                    <label>Email
-                        <input type="text" id="email">
-                    </label>
+                    <label for="email"></label><input type="text" id="email" placeholder="Email">
+                    <br>
                 </div>
                 <div>
-                    <label>Address
-                        <input type="text" id="address">
-                    </label>
+                    <label for="address"></label><input type="text" id="address" placeholder="Address">
                 </div>
                 <div class="button">
                     <input type="submit" value="Submit" onclick="submitForm()">
